@@ -1,8 +1,8 @@
 echo "Pushing local changes to server..."
 
-hg diff --stat
+hg addremove overlays sprites objects animations transitions
 
-hg addremove overlays sprites objects animations transitions -X sprites/cache.fcs -X objects/cache.fcz animations/cache.fcz transitions/cache.fcz
+hg diff --stat
 
 echo "Enter commit message."
 echo -n "> "
